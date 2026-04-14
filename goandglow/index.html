@@ -16,12 +16,23 @@
         position: relative;
     }
 
-    .section img {
+    /* ONLY background images */
+    .bg-img {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* shows full image */
+        object-fit: contain;
         display: block;
         background-color: black;
+    }
+
+    /* Logo (no black background applied) */
+    .logo {
+        position: absolute;
+        top: 38.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 97px;
+        cursor: pointer;
     }
 </style>
 </head>
@@ -29,46 +40,36 @@
 <body>
 
 <div class="section">
-    <img src="photos/pt1.png">
+    <img src="photos/pt1.png" class="bg-img">
 </div>
 
 <div class="section">
-    <img src="photos/pt2.png">
+    <img src="photos/pt2.png" class="bg-img">
 </div>
 
 <div class="section">
-    <img src="photos/pt3.png">
+    <img src="photos/pt3.png" class="bg-img">
 </div>
 
 <div class="section">
-    <img src="photos/pt4.png">
+    <img src="photos/pt4.png" class="bg-img">
 </div>
 
 <div class="section">
-    <img src="photos/pt5.png">
+    <img src="photos/pt5.png" class="bg-img">
 </div>
 
 <div class="section">
-    <img src="photos/pt6.png">
+    <img src="photos/pt6.png" class="bg-img">
 </div>
 
-<!-- Last section with clickable logo -->
-<div class="section" style="position: relative;">
-
-    <img src="photos/pt7.png">
+<!-- Last section -->
+<div class="section">
+    <img src="photos/pt7.png" class="bg-img">
 
     <a href="https://ift.tt/snliN5j" target="_blank">
-        <img src="photos/logo.png" 
-             style="
-                position: absolute;
-                top: 35%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 200px;
-                cursor: pointer;
-             ">
+        <img src="photos/logo.png" class="logo">
     </a>
-
 </div>
 
 </body>
